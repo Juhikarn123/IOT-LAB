@@ -1,0 +1,160 @@
+                                            Raspberry Pi board 
+The Raspberry Pi is a single-board computer developed by the Raspberry Pi Foundation, a UK-based charity organization. Originally designed to provide young people with an affordable computing option to learn how to program, it has developed a massive following in the maker and DIY communities because of its compact size, full Linux environment, and general-purpose input–output (GPIO) pins. 
+With all the features and capabilities that are packed into this small board, there’s no shortage of projects and use cases for the Raspberry Pi. 
+Some example projects include the following: 
+•	Line-following robot  	 	 	 	Home weather station 
+•	Retro gaming machine 	 	 	 	Real-time object detection camera 
+•	Minecraft server 	 	 	 	 	Button-controlled music box 
+•	Media center 
+•	Remote experiments on the International Space Station 
+Raspberry Pi  4 Board Overview : Below is the board layout of the Raspberry Pi 4. While this layout is slightly different from previous models of the Raspberry Pi, most of the connections are the same. The setup described here should be the same for both a Raspberry Pi 3 and a Raspberry Pi 4: 
+  o USB ports — these are used to connect a mouse and keyboard. You can also connect other components, such as a USB drive. 
+o	SD card slot — you can slot the SD card in here. This is where the operating system software and your files are stored. o Ethernet port — this is used to connect Raspberry Pi to a network with a cable. Raspberry Pi can also connect to a network via wireless LAN. o Audio jack — you can connect headphones or speakers here. 
+o	HDMI port — this is where you connect the monitor (or projector) that you are using to display the output from the Raspberry Pi. If your monitor has speakers, you can also use them to hear sound. o Micro USB power connector — this is where you connect a power supply. You should always do this last, after you have connected all your other components. o GPIO ports — these allow you to connect electronic components such as LEDs and buttons to Raspberry Pi. 
+ 
+Setting Up the Raspberry Pi 
+Unlike the Arduino, which requires only a USB cable and a computer to set up, the Raspberry Pi has more hardware requirements to get up and running. After the initial setup, though, some of these peripherals will no longer be required. 
+Required Hardware: The following hardware is required for the initial setup of your Raspberry Pi. If you end up connecting to your Raspberry Pi over SSH, which you’ll look at later in this tutorial, then some of the hardware below will not be needed after the initial setup. 
+Monitor: You’ll need a monitor during the initial setup and configuration of the operating system. If you’ll be using SSH to connect to your Raspberry Pi, then you won’t need the monitor after setup. Make sure your monitor has an HDMI input. 
+microSD Card: Raspberry Pi uses a microSD card to store the operating system and files. If you buy a Raspberry Pi kit, then it will contain a preformatted microSD card for you to use. If you buy a microSD card separately, then you’ll need to format it yourself. Look for a microSD card with at least 16GB of capacity. 
+Keyboard and Mouse: A USB keyboard and mouse are required during the initial setup of the Raspberry Pi. Once the setup is complete, you can switch to using Bluetooth versions of these peripherals if you prefer. Later in this tutorial, you’ll see how to connect to the Raspberry Pi over SSH. If you choose to connect this way, then a physical keyboard and mouse are not required after the initial setup. 
+HDMI Cables: You’ll need an HDMI cable to connect the Raspberry Pi to a monitor. Different Raspberry Pi models have different HDMI cable requirements: 
+Raspberry Pi 4 	Raspberry Pi 3/2/1 	Raspberry Pi Zero 
+micro HDMI 	HDMI 	mini HDMI 
+micro HDMI to HDMI 	HDMI to HDMI 	mini HDMI to HDMI 
+Depending on your model, you may need to purchase a special HDMI cable or adapter. Power Supply: The Raspberry Pi uses a USB connection to power the board. Again, different Raspberry Pi models have different USB connection and power requirements. 
+Below are the connection and power requirements for the different models: 
+Raspberry Pi 4 	Raspberry Pi 3/2/1/Zero 
+USB-C 	Micro-USB 
+	At least 3.0 amps 	At least 2.5 amps 
+ 
+  
+ 
+Various types of sensors 
+A Sensor or a Detector is a device that is used to convert a physical parameter into a signal that can be measured or monitored. • For example a GAS Sensor monitors gas concentration (PPM) and converts it into electrical signal that can be measured. • The input parameter can be different like Light, Temperature, Humidity pressure etc but the output is generally a human readable or electrically monitorable. 
+A sensor is classified based on various aspects such as – Application Based: Industrial Sensor, Automotive Sensor etc – Output Based : Resistive output, Differential Output, Differential output, voltage output etc – Parameter Sensing Based: Light, Temperature etc 
+•	Light Sensor  
+•	Temperature Sensor  
+•	Proximity Sensor 
+•	Pressure Sensor 
+•	GAS Sensor 
+•	Current Sensor  
+•	Bio-Medical Sensor  
+•	Sound Sensor  
+•	Tilt Sensor 
+•	Hall effect Sensor 
+•	Accelerometer Sensor  
+•	Compass Sensor 
+•	Flow Sensor  
+•	Humidity Sensor  
+•	Level Sensor  
+•	Motion Sensor 
+•	Speed Sensor 
+•	RPM Sensor  
+•	Force Sensor 
+  
+IR sensor:  An infrared sensor is an electronic instrument which is used to sense certain characteristics of its surroundings by either emitting and/or detecting infrared radiation. Infrared sensors are also capable of measuring the heat being emitted by an object and detecting motion. 
+Infrared waves are not visible to the human eye. In the electromagnetic spectrum, infrared radiation can be found between the visible and microwave regions.  
+The infrared waves typically have wavelengths between 0.75 and 1000µm. 
+  
+Temperature Sensor (DHT 11): The DHT11 temperature and humidity sensor is a nice little module that provides digital temperature and humidity readings. It’s really easy to set up, and only requires one wire for the data signal.  
+These sensors are frequently used in remote weather stations, soil monitors, and home environment control systems. The programming is simple too, and many libraries and example code in both Python and C already exist.  
+  
+  
+  
+Actuators: An actuator is a component of a machine that is responsible for moving or controlling a mechanism or system. • An actuator requires a control signal and a source of energy. The control signal is relatively low energy and may be electric voltage or current, pneumatic or hydraulic pressure, or even human power. • When the control signal is received, the actuator responds by converting the energy into mechanical motion. Following basic actuators are used for signaling and output purpose:  
+–	LED  
+–	RGB LED  
+–	Buzzer  
+–	Servo Motor  
+–	DC Motor  
+–	Relay 
+   
+  
+Experiment No. 1 b 	Date:  	 
+b. Demonstration and study of other Hardware board of IoT such as Arduino Uno and 
+NodeMCU 
+	Arduino  Uno: Arduino is an open-source electronics platform based on easy-to-use 
+hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing. 
+  
+•	Arduino Uno is a microcontroller board, developed by Arduino.cc, based on the Atmega328 microcontroller and is marked as the first Arduino board developed(UNO means “one” in Italian). 
+•	The software used for writing, compiling & uploading code to Arduino boards is called Arduino IDE (Integrated Development Environment), which is free to download from Arduino Official Site. 
+•	Arduino UNO has a maximum current rating of 40mA, so the load shouldn’t exceed this current rating or you may harm the board. 
+•	It comes with a crystal oscillator of 16MHz, which is its operating frequency. 
+•	Arduino Uno Pinout consists of 14 digital pins starting from D0 to D13. 
+•	It also has 6 analog pins starting from A0 to A5. 
+•	It also has 1 Reset Pin, which is used to reset the board programmatically. In order to reset the board, we need to make this pin LOW. 
+•	It also has 6 Power Pins, which provide different voltage levels. 
+•	Out of 14  digital pins, 6 pins are used for generating PWM pulses of 8-Bit resolution. PWM pins in Arduino UNO are D3, D5, D6, D9, D10 and D11. 
+ 
+
+• o o o • 
+o o o 
+• 	Arduino UNO comes with 3 types of memories associated with it, named: 
+Flash Memory: 32KB 
+SRAM: 2KB 
+EEPROM: 1KB 
+Arduino UNO supports 3 types of communication protocols, used for interfacing with third-party peripherals, named: 
+Serial Protocol 
+I2C Protocol 
+SPI Protocol 
+Atmega328 microcontroller is placed on the board that comes with a number of features like timers, counters, interrupts, PWM, CPU, I/O pins and based on a 16MHz clock that helps in producing more frequency and number of instructions per cycle. 
+NodeMCU: The NodeMCU (Node MicroController Unit) is an open source software and hardware development environment that is built around a very inexpensive System-on-aChip (SoC) called the ESP8266. The ESP8266, designed and manufactured by Espressif Systems, contains all crucial elements of the modern computer: CPU, RAM, networking (wifi), and even a modern operating system and SDK.  
+ 
+Through its pins we can read inputs - light on a sensor, a finger on a button, or a Twitter message -and turn them into an output - activating a motor, turning on an LED, publishing something online. It has also WiFi capabilities, so we can control it wirelessly and make it work on a remote installation easily! We can tell our board what to do by sending a set of instructions to the microcontroller on the board. To do so we can use the the Arduino Software (IDE). 
+Differences between Raspberry Pi and Arduino 
+Both Arduino and Raspberry Pi are good teaching tools for students, beginners and hobbyists. Let us see some of the differences between Raspberry Pi and Arduino. 
+The main difference between them is: Arduino is microcontroller board, while Raspberry Pi is a microprocessor based mini computer (SBC). 
+•	The Microcontroller on the Arduino board contains the CPU, RAM and ROM. All the additional hardware on Arduino Board is for power supply, programming and IO Connectivity. Raspberry Pi SBC has all features of a computer with a processor, memory, storage, graphics driver, connectors on the board. 
+•	Raspberry Pi needs an Operating System to run. Arduino doesn’t need any operating system. All you need is a binary of the compiled source code. 
+•	Raspberry Pi comes with a fully functional operating system called Raspberry Pi OS (previously known as Raspbian OS). Although Pi can use different operating systems, Linux is preferred by Raspberry Pi Foundation. You can install Android, if you want. Arduino does not have any operating system. You just need a firmware instructing the Microcontroller what task to do. 
+•	The clock speed of Arduino is 16 MHz while the clock speed of Raspberry Pi is around 1.2 GHz. 
+13 
+ 
+•	Raspberry Pi is good for developing software applications using Python, while Arduino is good for interfacing Sensors and controlling LEDs and Motors. 
+Comparison of Raspberry Pi vs Arduino 
+Let us now see the comparison of Raspberry Pi vs Arduino in a tabular form. 
+Raspberry Pi                                      	                                 Arduino 
+Raspberry Pi is a Single Board Computer or 
+SBC 	                                                                                Arduino is a Microcontroller based development board 
+.It is based on Broadcom SoC, an ARM Cortex A Series Microprocessor 	                  It is based on Atmel Microcontrollers.Arduino UNO uses ATmega328P Microcontroller 
+.A Debian based Linux Distribution called 
+Raspberry Pi OS is needed to boot the Raspberry Pi 	                                  As it is a Microcontroller, there is no need for an operating system 
+.Raspberry Pi SBC can preform multiple tasks simultaneously due 
+to its powerful processor and Linux based OS 	                                         Arduino is usually used for running a single task (or a very small no. of simple tasks) repeatedly, over and over again 
+.All the necessary components like 
+Processor, RAM, Storage, Connectors, GPIO 
+Pins, etc. are situated on the Raspberry Pi Board itself 	                             The Microcontroller on the Arduino Board (like ATmega328P) contains the Processor, RAM,ROM. The board contains supporting hardware (for power and data) and GPIO Pins 
+.The cost of original Raspberry Pi SBC was $35. Subsequently, all the base 
+variants of newer Raspberry Pi versions are priced at $35 only 	                        The cost of original Arduino UNO is $23 
+Both the hardware and firmware of 
+Raspberry Pi are closed-source i.e., it is not available for general use 	               Arduino is developed as open-source hardware and software from the beginning. You can easily get complete information on Arduino’s hardware and software 
+Raspberry Pi SBC has several GPIO Pins (the famous 40-pin Raspberry Pi GPIO),
+using which you can connect different sensors, IO Devices, etc. 	                       GPIO is an important peripheral of any Microcontroller and Arduino UNO is no exception. In Arduino terminology, these pins are called 
+                                                                                          Digital IO (to connect LEDs and Buttons) and Analog IN (to connect analog devices) 
+.Using the 40-pin GPIO Pins, you can add additional features / functionalities to 
+Raspberry Pi with HAT (Hardware Attached on Top) expansion boards                       	A similar way to add extra features and functionalities in Arduino is using Arduino Shields (which are also connected through the IO Pins) 
+. As Raspberry Pi is essentially a computer, you have to properly shutdown 
+after using it or before powering it down 	                                             As Arduino is a Microcontroller board, you can plug and unplug the power as you want 
+.The main programming languages for developing application in Raspberry Pi are Python,
+Scratch, Ruby, C, C++ 	                                                                 Arduino can be programmed using C or C++ Programming Languages 
+.The logic level of Raspberry Pi’s GPIO is 3.3V. So, 
+be careful when connecting hardware to the GPIO Pins 	                                    Arduino’s logic level is 5V. As most of the sensors and modules are designed for Arduino, there won’t be any problem connecting them to Arduino. But double check every module and connection just to be on the safe side 
+.Raspberry Pi must be powered using an USB Power Adapter as it requires 5V 2A or 
+5V 3A power 	                                                                             Arduino can be powered from a computer’s USB Port (make sure the USB Port’s current limit is not exceeded) 
+.You can easily connect to internet using WiFi or Ethernet                               	For Arduino, you need additional module or shields to connect to internet 
+.Raspberry Pi has the hardware for Bluetooth and Wi-Fi on board 	                        There is no wireless connectivity in case of Arduino (at least on board) 
+How to decide between Raspberry Pi and Arduino? 	
+•	From above discussion, we can understand that Arduino is good for repetitive tasks such as opening the garage door, switching the lights on and off, reading from temperature sensors, control a motor as the user wants, etc. 
+•	While Pi is good for performing multiple tasks, driving complicated robots, playing videos, connect to internet, interface cameras, etc. 
+•	For example, if you want to develop an application where you want to monitor Humidity and Temperature from DHT11 Sensor and display the results on an LCD, then Arduino can be used to implement this. 
+•	But if you want to monitor the Humidity and Temperature from DHT11 Sensor, send an e-mail with the results, check / compare the reading with a weather report from online and also display the results on an LCD, then Raspberry Pi is the right choice. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
